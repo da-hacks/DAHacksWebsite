@@ -34,10 +34,10 @@ import Ryah from './Assets/teami/Ryah.jpg';
 import zoha from './Assets/teami/zoha.png';
 
 const TOP_SECTION = {
-  TITLE: 'Join Limbo Hacks',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
+  TITLE: 'Join DA Hacks',
+  Typed_effect: ['2 days of creation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Join us on 20th November 2021 with over 300 students from across the nation for 2 days of creation, innovation, & fun.',
   IMG_SRC: boy,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
@@ -57,9 +57,9 @@ const SOCIALS = {
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is Limbo hacks?',
+  TITLE: 'What is DA Hacks?',
   LONG_DESCRIPTION:
-    'Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
+    'Hack Limbo is 2 day long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at DA Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
   LOGO: hackathonLogo
 };
 
@@ -86,17 +86,17 @@ const FOOTER = {
  *
  * INSTRUCTIONS
  *
- * Date format : 8-11-2021, 18-11-2021 (without trailing zeros)
+ * Date format : 8-11-2021, 18-11-2021 (without trailing zeros), this is day-month-year
  */
 
 const calenderStartingDate = {
-  month: 12,
-  year: 2021
+  month: 6,
+  year: 2024
 };
 
 const schedule = [
   {
-    day: '8-11-2021',
+    day: '8-6-2024',
     events: [
       {
         title: 'Intro to phycycology',
@@ -106,7 +106,7 @@ const schedule = [
     ]
   },
   {
-    day: '5-12-2021',
+    day: '5-6-2024',
     events: [
       {
         title: 'Intro to deep learning',
@@ -121,7 +121,7 @@ const schedule = [
     ]
   },
   {
-    day: '3-12-2021',
+    day: '3-6-2024',
     events: [
       {
         title: 'Intro to phycycology',
@@ -131,7 +131,7 @@ const schedule = [
     ]
   },
   {
-    day: '1-12-2021',
+    day: '1-6-2024',
     events: [
       {
         title: 'Intro to deep learning',
@@ -141,7 +141,7 @@ const schedule = [
     ]
   },
   {
-    day: '1-1-2022',
+    day: '2-6-2024',
     events: [
       {
         title: 'Intro to phycycology',
@@ -169,19 +169,19 @@ const Prizeinfo = [
     //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'overall First',
+      type: 'Overall First',
       content:
         'First Overall prize will be given to a project that outstands all other submissions'
     },
     {
       icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: 'overall Second',
+      type: 'Overall Second',
       content:
         'Second Overall prize will be given to the second best project of the hackathon'
     },
     {
       icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: 'Third Second',
+      type: 'Overall Third',
       content:
         'Best third overall project of the hackathon will win some awesome prizes'
     }
@@ -336,12 +336,12 @@ const frequentlyAskedQuestions = [
       {
         label: 'What is a hackathon?',
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'
+          'A hackathon is a 2 day event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'
       },
       {
         label: 'Who can attend?',
         content:
-          'Limbo Hacks is open to all undergraduate, high school students and middle school students from all schools.'
+          'DA Hacks is open to all undergraduate, high school students and middle school students from all schools.'
       },
       {
         label: 'I am a first time hacker, what should I do?',
@@ -372,22 +372,22 @@ const frequentlyAskedQuestions = [
       },
       {
         label: 'Will there be swag?',
-        content: 'Yes! Participants will recieveing Limbo Hacks swag!.'
+        content: 'Yes! Participants will recieveing DA Hacks swag!.'
       }
     ]
   ]
 ];
 
 export {
-  TOP_SECTION,
-  MIDDLE_SECTION,
-  SOCIALS,
+  calenderStartingDate,
   FOOTER,
+  frequentlyAskedQuestions,
+  JudgesInfo,
+  MIDDLE_SECTION,
   Prizeinfo,
+  schedule,
+  SOCIALS,
   sponsorLogos,
   TeamInfo,
-  JudgesInfo,
-  frequentlyAskedQuestions,
-  schedule,
-  calenderStartingDate
+  TOP_SECTION
 };
