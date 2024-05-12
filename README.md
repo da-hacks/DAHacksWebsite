@@ -77,7 +77,9 @@ git@2.17.1 or higher
 ```
 
 Download NVM
+
 Start cmd in administrator mode to install a new Node version
+
 ```bash
 nvm install 15.14.0
 ```
