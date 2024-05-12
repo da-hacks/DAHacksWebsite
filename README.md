@@ -91,7 +91,7 @@ Open a regular cmd
 1. Clone the repo.
 
 ```bash
-git clone https://github.com/Abusayid693/Hackathon-website-template.git
+git clone https://github.com/da-hacks/Website.git
 ```
 
 2.Starting the Client application.
