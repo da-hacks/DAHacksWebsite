@@ -1,6 +1,8 @@
 import {useEffect, useState} from 'react';
 import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
 import {Btn} from '../Landing/index.jsx';
+import PrivacyPolicy from './assets/Privacy policy.pdf';
+import TermsOfUse from './assets/Terms of use.pdf';
 import cross from './assets/cross.svg';
 import DevPost from './assets/icons8-dev-post.svg';
 import Dis from './assets/icons8-discord.svg';
@@ -8,8 +10,6 @@ import Insta from './assets/icons8-instagram.svg';
 import Linked from './assets/icons8-linkedin-2.svg';
 import Mail from './assets/icons8-mail.svg';
 import Twitter from './assets/icons8-twitter.svg';
-import PrivacyPolicy from './assets/Privacy policy.pdf';
-import TermsOfUse from './assets/Terms of use.pdf';
 //------------------------------------------------------------------
 import './style.scss';
 
@@ -41,9 +41,10 @@ const Footer = () => {
     };
   }, []);
 
+  // Scroll tracker for popup at footer
   const listenScrollEvent = e => {
-    if (window.scrollY > 2800) setTemplate(true);
-    else if (window.scrollY < 2800) setTemplate(false);
+    // if (window.scrollY > 2800) setTemplate(true);
+    // else if (window.scrollY < 2800) setTemplate(false);
   };
 
   return (
@@ -83,7 +84,7 @@ const Footer = () => {
         </div>
         <div className="Register_a">
           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
-            <Btn type="Register" overlay="Fill the form" />
+            <Btn type="Register" overlay="Registration form" />
           </a>
           {FOOTER.VOLUNTEERING_FORM.required && (
             <a href={FOOTER.VOLUNTEERING_FORM.src}>
@@ -119,7 +120,7 @@ const Footer = () => {
               <p>Terms of Use</p>
             </a>
           )}
-          <p>Made with ❤️</p>
+          <p>Made with ❤️ by the DA Hacks team</p>
         </div>
         {template && viewTemplate && (
           <GithubTemplate hideTemplate={() => setViewTemplate(false)} />

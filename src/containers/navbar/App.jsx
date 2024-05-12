@@ -1,5 +1,5 @@
 import {useEffect, useRef, useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import styled from 'styled-components';
 import HomePage from '../Home/HomePage';
@@ -108,17 +108,17 @@ const NAVBAR = ({}) => {
               </li>
               <li>
                 <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{' '}
+                  <span className="links">Prizes </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{' '}
+                  <span className="links">Sponsors </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#team`}>
-                  <span className="links">team </span>{' '}
+                  <span className="links">Team </span>{' '}
                 </Link>
               </li>
               <img

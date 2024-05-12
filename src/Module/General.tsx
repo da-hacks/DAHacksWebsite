@@ -1,4 +1,4 @@
-import hackathonLogo from './Assets/hackathonLogo.png';
+import hackathonLogo from './Assets/logo.svg';
 
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
@@ -37,47 +37,46 @@ const TOP_SECTION = {
   TITLE: 'Join DA Hacks',
   Typed_effect: ['2 days of creation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Join us on 20th November 2021 with over 300 students from across the nation for 2 days of creation, innovation, & fun.',
+    'Join us on June 7th and 8th, 2024 with over 100 other FHDA students for 2 days of creation, innovation, and fun.',
   IMG_SRC: boy,
-  DISCORD_LINK: '',
-  JUDGES_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u',
+  DISCORD_LINK: 'https://discord.gg/nzzTpbUV',
+  JUDGES_FORM_LINK: '',
   HACKERS_REGISTRATION_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u'
+    'https://docs.google.com/forms/d/1wjtvwe0lvwZG1k31KVZjOiKGvsF3oVw3IdIokwsXXIg/edit'
 };
 
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/limbohacks/',
-  discord: 'https://discord.com/invite/8XJSzmtWPp',
-  linkedin: 'https://www.linkedin.com/company/limbo-hacks/',
-  twitter: 'https://twitter.com/HacksLimbo',
-  devpost: 'https://limbo-hacks-12968.devpost.com/',
-  email: 'mailto:hello@limbohacks.tech',
-  mail: 'hello@limbohacks.tech'
+  instagram: 'https://www.instagram.com/deanzahacks/',
+  discord: 'https://discord.gg/nzzTpbUV',
+  linkedin: '',
+  twitter: '',
+  devpost: '', // FIXME: add devpost link when finished
+  email: 'mailto:deanzadevelopers@gmail.com',
+  mail: 'deanzadevelopers@gmail.com'
 };
 
 const MIDDLE_SECTION = {
   TITLE: 'What is DA Hacks?',
   LONG_DESCRIPTION:
-    'Hack Limbo is 2 day long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at DA Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
+    'DA Hacks is a highly anticipated two-day student-run hackathon, catering exclusively to college students in the vibrant Bay Area. Our mission is to create an unforgettable experience for participants, offering a rich and diverse program that encompasses engaging workshops, enlightening sessions led by industry experts, opportunities to connect with like-minded peers who share a passion for computer science, and the chance to hone their coding skills in a supportive, stress-free environment. In the previous edition of DA Hacks, we proudly welcomed over 70 enthusiastic attendees, with an impressive 120 signups. As we continue to grow and evolve, we look forward to setting new milestones and providing an even more enriching experience for our participants.',
   LOGO: hackathonLogo
 };
 
 const FOOTER = {
   VOLUNTEERING_FORM: {
-    required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
+    required: false,
+    src: ''
   },
   JOIN_TEAM: {
-    required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
+    required: false,
+    src: ''
   },
   Privacy_policy: {
-    required: true,
+    required: false,
     src: ''
   },
   Terms_of_use: {
-    required: true,
+    required: false,
     src: ''
   }
 };
@@ -171,13 +170,13 @@ const Prizeinfo = [
       icon: <i className="first fas fa-4x fa-trophy"></i>,
       type: 'Overall First',
       content:
-        'First Overall prize will be given to a project that outstands all other submissions'
+        'A first overall prize of $200 will be given to a project that stands out among all other submissions!'
     },
     {
       icon: <i className=" second fas fa-4x fa-medal"></i>,
       type: 'Overall Second',
       content:
-        'Second Overall prize will be given to the second best project of the hackathon'
+        'Second overall prize will be given to the second best project of the hackathon'
     },
     {
       icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
@@ -196,7 +195,7 @@ const Prizeinfo = [
     },
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: ' Best Beginner',
+      type: 'Best Beginner Hack',
       content: 'Your project will qualify for this category if atleast 50% '
     },
     {
@@ -336,43 +335,44 @@ const frequentlyAskedQuestions = [
       {
         label: 'What is a hackathon?',
         content:
-          'A hackathon is a 2 day event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'
+          'A hackathon is like a creative marathon for tech enthusiasts! DA Hacks is great for first timers or returners looking to experience inspiring guest speakers, helpful workshops, tons of skilled mentors, and, of course, fun games and cool swag.'
       },
       {
-        label: 'Who can attend?',
+        label: 'When and where is DA Hacks?',
         content:
-          'DA Hacks is open to all undergraduate, high school students and middle school students from all schools.'
+          'DA Hacks is from June 7 - 8 at De Anza College. Exact location on campus will be announced soon, together with the schedule! This is not an overnight event.'
       },
       {
-        label: 'I am a first time hacker, what should I do?',
+        label: 'Does it cost money to attend?',
         content:
-          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general.'
+          'No need to break the bank to join in on the hacking fun! DA Hacks is absolutely FREE to attend. We believe in making tech innovation accessible to everyone.'
       },
       {
-        label: 'How team formation works?',
+        label: 'Are there prizes?',
         content:
-          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
+          'There will be prizes and swag for First, Second, and Third place. Others include Best Beginner Hack, Best Hardware Hack, Most Entertaining Hack, and Best Design.'
       }
     ],
     [
       {
-        label: 'How to register myself in the hackathon?',
+        label: 'Is it beginner friendly?',
         content:
-          'All you need is to fill our form above and join Discord, we will guide you through everything there'
+          "Don't sweat! DA Hacks welcomes hackers of all levels, whether you're a coding prodigy or just dipping your toes into the world of hacking. We'll have workshops and mentors to help you along the way, so you can learn, create, and have a blast!"
       },
       {
-        label: 'I have more questions?',
+        label: 'How do teams work?',
         content:
-          'Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you.'
+          'Teams can have up to 4 members. You can either form a team before hand and come to the event or make teammates at the event. We will be having a team making session. You can also choose to be alone if you wish to!'
       },
       {
-        label: 'Can i volunteer?',
+        label: "What if I don't have a team?",
         content:
-          'Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you.'
+          "No team? No problem! Leading up to our event, you can meet new people through our hacker Discord. We'll have team formation events at the beginning of the hackathon geared towards helping you find people to work with."
       },
       {
-        label: 'Will there be swag?',
-        content: 'Yes! Participants will recieveing DA Hacks swag!.'
+        label: 'I still have questions!',
+        content:
+          "Feel free to reach out to our friendly DA Hacks team through our social media or Discord channels. We're here to help, and we're just as excited as you are :D"
       }
     ]
   ]
