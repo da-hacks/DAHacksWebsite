@@ -91,13 +91,13 @@ Open a regular cmd
 1. Clone the repo.
 
 ```bash
-git clone https://github.com/da-hacks/Website.git
+git clone https://github.com/da-hacks/DAHacksWebsite.git
 ```
 
 2.Starting the Client application.
 
 ```bash
-cd Hackathon-website-template
+cd DAHacksWebsite
 
 # install all packages
 
