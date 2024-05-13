@@ -21,7 +21,7 @@ button {
 }
 
 .join_disco {
-  width: 25rem;
+  /*width: 25rem;*/
   background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
 }
 
@@ -41,7 +41,7 @@ button {
 }
 
 .register {
-  margin-left: 1rem;
+  /*margin-left: 1rem;*/
   border: 2px solid rgb(255, 255, 255);
   background-color: transparent;
 }
